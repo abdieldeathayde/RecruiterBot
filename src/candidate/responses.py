@@ -1,12 +1,12 @@
 class CandidateResponses:
     def __init__(self):
         self.responses = {
-            "Tell me about yourself.": "I am a recent graduate with a degree in Computer Science. I have a passion for coding and have completed several projects in Java.",
-            "What are your strengths?": "I am a quick learner and have strong problem-solving skills. I also work well in a team.",
-            "What are your weaknesses?": "I tend to be a perfectionist, which can slow me down at times, but I am working on balancing quality with efficiency.",
-            "Why do you want to work here?": "I admire your company's commitment to innovation and would love to contribute to exciting projects as a Junior Java Developer.",
-            "Where do you see yourself in five years?": "In five years, I hope to have advanced my skills and taken on more responsibilities, possibly in a lead developer role."
+            "Fale sobre você.": "Sou recém-formado em Ciência da Computação, tenho paixão por programação e já realizei vários projetos em Java.",
+            "Quais são seus pontos fortes?": "Sou rápido para aprender e tenho forte capacidade de resolução de problemas. Também trabalho bem em equipe.",
+            "Quais são suas fraquezas?": "Tenho tendência ao perfeccionismo, o que às vezes me deixa mais lento, mas estou trabalhando em equilibrar qualidade e eficiência.",
+            "Por que você quer trabalhar aqui?": "Admiro o compromisso da empresa com a inovação e gostaria de contribuir em projetos interessantes como Desenvolvedor Java Júnior.",
+            "Onde você se vê em cinco anos?": "Daqui a cinco anos, espero ter evoluído tecnicamente e assumido mais responsabilidades, possivelmente em um cargo de liderança técnica."
         }
 
     def get_response(self, question):
-        return self.responses.get(question, "I'm not sure how to answer that.")
+        return self.responses.get(question, "Não sei como responder a isso.")

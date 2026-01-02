@@ -1,14 +1,14 @@
 from enum import Enum
 
 class QuestionType(Enum):
-    TECHNICAL = "Technical"
-    BEHAVIORAL = "Behavioral"
-    HR = "HR"
+    TECHNICAL = "Técnico"
+    BEHAVIORAL = "Comportamental"
+    HR = "RH"
 
 class ResponseFormat(Enum):
-    TEXT = "Text"
-    AUDIO = "Audio"
-    VIDEO = "Video"
+    TEXT = "Texto"
+    AUDIO = "Áudio"
+    VIDEO = "Vídeo"
 
 INTERVIEW_DURATION_MINUTES = 30
 MAX_QUESTIONS = 10

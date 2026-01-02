@@ -2,54 +2,58 @@
 
 This project simulates a real interview experience for the position of Junior Java Developer using artificial intelligence. The application facilitates interaction between a virtual recruiter and a candidate, providing a realistic interview environment.
 
-## Project Structure
+# Simulação de Entrevista com IA
+
+Este projeto simula uma experiência de entrevista real para a vaga de Desenvolvedor Java Júnior usando inteligência artificial. A aplicação facilita a interação entre um recrutador virtual e um candidato, proporcionando um ambiente de entrevista realista.
+
+## Estrutura do Projeto
 
 ```
 ai-recruiter-interview
 ├── src
-│   ├── app.py                # Entry point of the application
+│   ├── app.py                # Ponto de entrada da aplicação
 │   ├── recruiter
-│   │   └── interviewer.py     # Simulates the recruiter's behavior
+│   │   └── interviewer.py     # Simula o comportamento do recrutador
 │   ├── candidate
-│   │   └── responses.py       # Simulates the candidate's responses
+│   │   └── responses.py       # Simula as respostas do candidato
 │   ├── utils
-│   │   └── ai_engine.py       # Processes natural language and generates questions
+│   │   └── ai_engine.py       # Processa linguagem natural e gera perguntas
 │   └── types
-│       └── interview_types.py  # Contains types and constants for the interview process
-├── requirements.txt           # Lists project dependencies
-└── README.md                  # Documentation for the project
+│       └── interview_types.py  # Contém tipos e constantes do processo de entrevista
+├── requirements.txt           # Lista dependências do projeto
+└── README.md                  # Documentação do projeto
 ```
 
-## Setup Instructions
+## Instruções de Instalação
 
-1. Clone the repository:
-   ```
+1. Clone o repositório:
+   ```bash
    git clone <repository-url>
    cd ai-recruiter-interview
    ```
 
-2. Install the required dependencies:
-   ```
+2. Instale as dependências necessárias:
+   ```bash
    pip install -r requirements.txt
    ```
 
-## Usage Guidelines
+## Como Usar
 
-To start the AI interview simulation, run the following command:
+Para iniciar a simulação de entrevista com IA, execute o seguinte comando:
 ```
 python src/app.py
 ```
 
-The application will initiate an interactive session where the virtual recruiter will ask questions, and the candidate can respond accordingly.
+A aplicação iniciará uma sessão interativa onde o recrutador virtual fará perguntas e o candidato poderá responder.
 
-## Overview of Components
+## Visão Geral dos Componentes
 
-- **app.py**: The main entry point that initializes the interview simulation and manages interactions.
-- **interviewer.py**: Contains the `Interviewer` class responsible for asking questions and evaluating candidate responses.
-- **responses.py**: Contains the `CandidateResponses` class that generates responses based on the interview questions.
-- **ai_engine.py**: Implements the `AIEngine` class for processing natural language and generating interview questions and feedback.
-- **interview_types.py**: Defines various types and constants related to the interview process, such as question types and response formats.
+- **app.py**: Ponto de entrada que inicializa a simulação de entrevista e gerencia as interações.
+- **interviewer.py**: Contém a classe `Interviewer` responsável por fazer perguntas e avaliar respostas dos candidatos.
+- **responses.py**: Contém a classe `CandidateResponses` que gera respostas baseadas nas perguntas da entrevista.
+- **ai_engine.py**: Implementa a classe `AIEngine` para processamento de linguagem natural e geração de perguntas e feedback.
+- **interview_types.py**: Define diversos tipos e constantes relacionados ao processo de entrevista, como tipos de perguntas e formatos de resposta.
 
-## Contributing
+## Contribuição
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um pull request ou abrir uma issue com sugestões ou melhorias.
