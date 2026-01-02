@@ -1,6 +1,7 @@
-speechrecognition
-pyttsx3
-nltk
-scikit-learn
-numpy
-pandas
+SpeechRecognition==3.10.0
+pyttsx3==2.90
+openai-whisper==20231117
+nltk==3.8.1
+numpy==1.24.3
+torch==2.0.1
+torchaudio==2.0.2
