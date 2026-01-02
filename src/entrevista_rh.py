@@ -3,6 +3,7 @@ import speech_recognition as sr
 import soundfile as sf
 import time
 import os
+from gerar_relatorio import gerar_relatorio_profissional
 
 # =============================
 # CONFIGURAÇÃO DE VOZ
@@ -67,6 +68,10 @@ def entrevista_rh():
 
     falar("A entrevista foi encerrada. Obrigado pela sua participação.")
     print("✅ Entrevista finalizada.")
+    
+    # Gerar relatório automaticamente
+    print("\n⏳ Processando respostas e gerando relatório...\n")
+    gerar_relatorio_profissional()
 
 if __name__ == "__main__":
     entrevista_rh()
